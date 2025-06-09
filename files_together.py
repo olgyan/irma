@@ -10,7 +10,7 @@ def files_together(folder_name):
     assert folder.is_dir(), 'нет такой папки'
     
     txt_files = [f for f in folder.iterdir() if f.suffix == '.txt']
-    assert txt_files, 'Папка должна соджержать файлы .txt'
+    assert txt_files, 'Папка должна содержать файлы .txt'
     
     records = list(
         get_text.outof(file, 'to string')
