@@ -61,23 +61,3 @@ def select_records(
 
 if __name__ == "__main__" and len(sys.argv) > 1:
     select_records(*sys.argv[1:4])
-
-    # # --- Test with Assertions ---
-    # # Test data
-    # records = ["apple banana", "orange lemon", "apple orange"]
-    # things_to_find = ["apple", "banana"]
-
-    # # Test 1: Check if function returns non-None
-    # selected = select_records(records, "with", things_to_find)
-    # assert selected is not None, "Function returned None!"
-
-    # # Test 2: Verify correctness of filtered results
-    # expected_with = ["apple banana", "apple orange"]
-    # assert selected == expected_with, f"Expected {expected_with}, got {selected}"
-
-    # # Test 3: Check 'without' mode
-    # filtered = select_records(records, "without", things_to_find)
-    # expected_without = ["orange lemon"]
-    # assert filtered == expected_without, f"Expected {expected_without}, got {filtered}"
-
-    # print("All assertions passed! ✅")
